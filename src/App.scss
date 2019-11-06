@@ -1,0 +1,148 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.jumbotron{
+  background-color:  #1a2865;
+  color: red;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  height: 360px;
+  
+}
+body{
+  background-image: url("backgroundLight.png");
+  background-size:cover;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+.header-image{
+  height: 60%;
+  width: 100%;
+}
+.hero-card-container {
+  //background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin:1rem 10rem 1rem 10rem;
+  
+}
+.hero-card {
+ // background-color:green;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 275px;
+  margin: 30px;
+  
+}
+.expanded-hero-card{
+  width:500px;
+
+
+}
+.hero-image{
+  height: 300px !important;
+  width: 275px !important;
+}
+.hero-details{
+  box-shadow: 10px 10px 10px 10px;
+  border-radius: 1rem;
+  position:fixed;
+  display: flex;
+ flex-direction: column;
+  color: #1a2865;
+  font-size: 2rem;
+  background-color:white;
+  height: 70%;
+  width: 50%;
+  font-weight: 900;
+  padding-left: 20%;
+  padding-top: 2rem;
+  background-image:url("infoBackground.png");
+  background-size: 100% 100%;
+  overflow-y:auto;
+  transition-duration:0.5s;
+  @media only screen and (max-width: 1280px) {
+ width: 100%;
+ background-image:none;
+ color: white             ;
+ background-color: #1a2865;
+}
+
+
+  & > button{
+    background-color: transparent;
+    border: none;
+  }
+  & > button:hover{
+    box-shadow: 1px 1px 1px 1px;
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.exit-button{
+  position: absolute;
+  top: 1px;
+  right: 1px;
+}
+.carousel .slide {
+  min-width: 100%;
+   margin: 0; 
+  position: unset; 
+  text-align: unset; 
+   background: transparent; 
+}
+button{
+  border-radius: 5px;
+  margin-right: 5px;
+}
+label{
+  color:red
+}
+.hero-details-collapsed {
+ 
+  border-radius: 1rem;
+  position:absolute;
+  display: flex;
+ flex-direction: column;
+  color: #1a2865;
+  font-size: 2rem;
+  background-color:white;
+  height: 100%;
+  width: 0%;
+  font-weight: 900;
+  padding-left:0;
+  padding-top: 2rem;
+  background-image:url("infoBackground.png");
+  background-size: 100% 100%;
+  overflow-y:auto;
+  transition-duration:0.5s;
+}
